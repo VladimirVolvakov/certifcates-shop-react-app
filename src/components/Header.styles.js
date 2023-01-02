@@ -18,7 +18,14 @@ export const LogoContainer = styled.div`
   align-items: center;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+`;
 
 export const LinksContainer = styled.div``;
 
@@ -34,6 +41,13 @@ export const Link = styled.li`
   line-height: 20px;
   font-weight: 600;
   color: #333;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #404936;
+  }
 `;
 
 export const ContactsContainer = styled.div`
