@@ -1,8 +1,11 @@
+// Components:
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div>
-      Магазин Сертификатов
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
