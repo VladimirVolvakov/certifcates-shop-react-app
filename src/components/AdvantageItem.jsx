@@ -1,12 +1,12 @@
 // Styles:
-import { AdvantagesContainer, Description, Image } from './Advantages.styles';
+import { ItemContainer, Description, Image } from './AdvantageItem.styles';
 
 const AdvantageItem = ({ image, description }) => {
   return (
-    <AdvantagesContainer>
+    <ItemContainer>
       <Image src={image} />
       <Description>{description}</Description>
-    </AdvantagesContainer>
+    </ItemContainer>
   );
 };
 
