@@ -1,9 +1,15 @@
 // Styles:
-import { Card } from "./ImpressionItem.styles";
+import { Button, Card, Image, Option, Price, Title } from "./ImpressionItem.styles";
 
-const ImpressionItem = () => {
+const ImpressionItem = ({ title, image, price, offer }) => {
   return (
-    <Card></Card>
+    <Card>
+      <Image src={image} />
+      <Title>{title}</Title>
+      <Price>{price}</Price>
+      <Button>Заказать</Button>
+      <Option>Подробнее</Option>
+    </Card>
   );
 };
 

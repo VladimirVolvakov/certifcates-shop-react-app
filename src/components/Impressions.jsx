@@ -20,67 +20,78 @@ const impressionsArray = [
     id: 1,
     title: 'Конная прогулка',
     image: HorseRiding,
-    price: 'от 990 ₽'
+    price: 'от 990 ₽',
+    specialOffer: false
   },
   {
     id: 2,
     title: 'Полет на мотопараплане',
     image: Paraplane,
-    price: '3 000 ₽'
+    price: '3 000 ₽',
+    specialOffer: false
   },
   {
     id: 3,
     title: 'Полет в аэротрубе',
     image: Aerotube,
-    price: 'от 1 800 ₽'
+    price: 'от 1 800 ₽',
+    specialOffer: true
   },
   {
     id: 4,
     title: 'Вечер в куполе',
     image: Dome,
-    price: '3 000 ₽'
+    price: '3 000 ₽',
+    specialOffer: false
   },
   {
     id: 5,
     title: 'Прогулка на яхте "Чайка"',
     image: YachtWalk,
-    price: 'от 3 500 ₽'
+    price: 'от 3 500 ₽',
+    specialOffer: false
   },
   {
     id: 6,
     title: 'Велопрогулка с пикником',
     image: BicycleWalk,
-    price: '3 000 ₽'
+    price: '3 000 ₽',
+    specialOffer: false
   },
   {
     id: 7,
     title: 'Драйв на квадроциклах',
     image: Quadrocycle,
-    price: 'от 1 800 ₽'
+    price: 'от 1 800 ₽',
+    specialOffer: false
   },
   {
     id: 8,
     title: 'Запись песни в студии',
     image: SongRecording,
-    price: '5 000 ₽'
+    price: '5 000 ₽',
+    specialOffer: false
   },
   {
     id: 9,
     title: 'Поездка на болотоходах',
     image: Jeeps,
-    price: '3 500 ₽'
+    price: '3 500 ₽',
+    specialOffer: false
   },
   {
     id: 10,
     title: 'Игра в виртуальной реальности',
     image: AugmentedReality,
-    price: '600 ₽'
+    price: '600 ₽',
+    specialOffer: false
   },
   {
     id: 11,
     title: 'Романтический пикник',
     image: Picnic,
-    price: '2 500 ₽'
+    price: '2 500 ₽',
+    specialOffer: false
   }
 ];
 
@@ -95,6 +106,7 @@ const Impressions = () => {
             title={impression.title} 
             image={impression.image} 
             price={impression.price} 
+            offer={impression.specialOffer}
           />
         )) }
       </Catalogue>
