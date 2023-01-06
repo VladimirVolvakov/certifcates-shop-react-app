@@ -8,7 +8,7 @@ const GiftCertificate = () => {
     <Container>
       <Image src={Certificates} />
       <TextContainer>
-      <Title>СЕРТИФИКАТ В ДИЗАЙНЕРСКОМ КОНВЕРТЕ</Title>
+        <Title>СЕРТИФИКАТ В ДИЗАЙНЕРСКОМ КОНВЕРТЕ</Title>
         <FeaturesList>
           <Feature>Электронный сертификат - бесплатный</Feature>
           <Feature>Сертификат в подарочном конверте - 200 руб.</Feature>
