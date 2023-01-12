@@ -1,5 +1,5 @@
 // Styles:
-import { Button, Container, Image, Price, Slide, Title } from './Hero.styles';
+import { Button, Container, Price, Slide, Title } from './Hero.styles';
 // Images:
 import HeroDome from '../assets/images/HeroDome.png';
 import HeroParaplane from '../assets/images/HeroParaplane.png';
@@ -51,7 +51,6 @@ const Hero = () => {
       >
         { slidesArray.map(slide => (
           <Slide key={slide.id} background={slide.image}>
-            <Image src={slide.image} alt={slide.description} />
             <Price>{slide.price}</Price>
             <Title>{slide.description}</Title>
             <Button>Заказать впечатление</Button>
