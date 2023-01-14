@@ -1,4 +1,5 @@
 // Components:
+import AccordionFaq from "./components/AccordionFaq";
 import Advantages from "./components/Advantages";
 import Footer from "./components/Footer";
 import GiftCertificate from "./components/GiftCertificate";
@@ -14,6 +15,7 @@ function App() {
       <Advantages />
       <Impressions />
       <GiftCertificate />
+      <AccordionFaq />
       <Footer />
     </>
   );
