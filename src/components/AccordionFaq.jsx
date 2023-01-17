@@ -1,54 +1,55 @@
 // Styles:
-import { Container } from "./AccordionFaq.styles";
+import { Answer, Container, Question, Title } from "./AccordionFaq.styles";
 // Accordion:
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 
 const AccordionFaq = () => {
   return (
     <Container>
+      <Title>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</Title>
       <Accordion>
         <AccordionItem>
           <AccordionHeader>
-            <h3 className={`accordion-title`}>Могу ли я купить сертификат в подарок?</h3>
+            <Question>Могу ли я купить сертификат в подарок?</Question>
           </AccordionHeader>
           <AccordionBody>
-            <div className="accordion-body">Что по кайфу, то и делайте.</div>
+            <Answer>Что по кайфу, то и делайте.</Answer>
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionHeader>
-            <h3 className={`accordion-title`}>Могу ли я поменять сертификат на другой?</h3>
+            <Question>Могу ли я поменять сертификат на другой?</Question>
           </AccordionHeader>
           <AccordionBody>
-            <div className="accordion-body">Что по кайфу, то и делайте.</div>
+            <Answer>Что по кайфу, то и делайте.</Answer>
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionHeader>
-            <h3 className={`accordion-title`}>Могу ли я купить сертификат в подарок?</h3>
+            <Question>Могу ли я купить сертификат в подарок?</Question>
           </AccordionHeader>
           <AccordionBody>
-            <div className="accordion-body">Что по кайфу, то и делайте.</div>
+            <Answer>Что по кайфу, то и делайте.</Answer>
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionHeader>
-            <h3 className={`accordion-title`}>Могу ли я поменять сертификат на другой?</h3>
+            <Question>Могу ли я поменять сертификат на другой?</Question>
           </AccordionHeader>
           <AccordionBody>
-            <div className="accordion-body">Что по кайфу, то и делайте.</div>
+            <Answer>Что по кайфу, то и делайте.</Answer>
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionHeader>
-            <h3 className={`accordion-title`}>Могу ли я купить сертификат в подарок?</h3>
+            <Question>Могу ли я купить сертификат в подарок?</Question>
           </AccordionHeader>
           <AccordionBody>
-            <div className="accordion-body">Что по кайфу, то и делайте.</div>
+            <Answer>Что по кайфу, то и делайте.</Answer>
           </AccordionBody>
         </AccordionItem>
       </Accordion>
