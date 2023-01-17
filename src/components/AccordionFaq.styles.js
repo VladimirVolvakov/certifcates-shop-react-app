@@ -15,18 +15,4 @@ export const Title = styled.h2`
   margin-bottom: 60px;
 `;
 
-export const Question = styled.h3`
-  font-size: 30px;
-  line-height: 37px;
-  font-weight: 600;
-  color: #333;
-  width: 100%;
-  border: none;
-`;
-
-export const Answer = styled.div`
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #333;
-`;
+export const Accordion = styled.div``;
