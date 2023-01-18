@@ -1,5 +1,5 @@
 // Styles:
-import { Button, Container, Header, Image, Info, NewPrice, Offer, OldPrice, PriceChange, Title } from "./BestOffer.styles";
+import { Button, Container, Header, Image, ImageContainer, Info, NewPrice, Offer, OldPrice, PriceChange, Title } from "./BestOffer.styles";
 // Images:
 import Aerotube from "../assets/images/Aerotube.png";
 import HorseRiding from "../assets/images/HorseRiding.png";
@@ -49,7 +49,9 @@ const BestOffer = () => {
               </PriceChange>
               <Button>Заказать впечатление</Button>
             </Info>
+            <ImageContainer>
             <Image src={offer.image} alt={offer.title} />
+            </ImageContainer>
           </Offer>
         )) }
       </Carousel>
