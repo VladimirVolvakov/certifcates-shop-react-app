@@ -1,6 +1,7 @@
 // Components:
 import AccordionFaq from "./components/AccordionFaq";
 import Advantages from "./components/Advantages";
+import BestOffer from "./components/BestOffer";
 import Footer from "./components/Footer";
 import GiftCertificate from "./components/GiftCertificate";
 import Header from "./components/Header";
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Advantages />
       <Impressions />
+      <BestOffer />
       <GiftCertificate />
       <AccordionFaq />
       <Footer />
