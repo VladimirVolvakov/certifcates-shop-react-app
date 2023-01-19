@@ -9,6 +9,11 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 375px) {
+    height: 60px;
+    max-width: 335px;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -16,6 +21,11 @@ export const LogoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 375px) {
+    width: auto;
+    justify-content: flex-start;
+  }
 `;
 
 export const Image = styled.img`
@@ -25,9 +35,30 @@ export const Image = styled.img`
     cursor: pointer;
     opacity: 0.75;
   }
+
+  @media (max-width: 375px) {
+    height: 43px;
+  }
 `;
 
-export const LinksContainer = styled.div``;
+export const ImageText = styled.img`
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+`;
+
+export const LinksContainer = styled.div`
+  @media (max-width: 375px) {
+    display: none;
+  }
+`;
 
 export const LinksList = styled.ul`
   display: flex;
@@ -55,6 +86,10 @@ export const ContactsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+
+  @media (max-width: 375px) {
+    gap: 20px;
+  }
 `;
 
 export const PhoneNumber = styled.p`
@@ -62,4 +97,35 @@ export const PhoneNumber = styled.p`
   line-height: 20px;
   font-weight: 600;
   color: #333;
+
+  @media (max-width: 375px) {
+    color: #404936;
+  }
+`;
+
+export const SocialMediaImage = styled.img`
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
+`;
+
+export const MenuBtn = styled.img`
+  display: none;
+
+  @media (max-width: 375px) {
+    display: block;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.75;
+    }
+  }
 `;

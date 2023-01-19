@@ -1,9 +1,11 @@
 // Styles:
-import { ContactsContainer, Container, Image, LinksList, LinksContainer, LogoContainer, Link, PhoneNumber } from './Header.styles.js';
+import { ContactsContainer, Container, Image, ImageText, LinksList, LinksContainer, LogoContainer, Link, MenuBtn, 
+  PhoneNumber, SocialMediaImage } from './Header.styles.js';
 // Images:
 import InstaIcon from '../assets/icons/InstagramIcon.png';
 import LogoImage from '../assets/icons/Group_54.png';
 import LogoText from '../assets/icons/Group.png';
+import MenuButton from '../assets/icons/MenuButton.png';
 import VkIcon from '../assets/icons/VkIcon.png';
 
 const Header = () => {
@@ -11,7 +13,7 @@ const Header = () => {
     <Container>
       <LogoContainer>
         <Image src={LogoImage} />
-        <Image src={LogoText} />
+        <ImageText src={LogoText} />
       </LogoContainer>
       <LinksContainer>
         <LinksList>
@@ -22,8 +24,9 @@ const Header = () => {
       </LinksContainer>
       <ContactsContainer>
         <PhoneNumber>+38-050-123-45-67</PhoneNumber>
-        <Image src={VkIcon} />
-        <Image src={InstaIcon} />
+        <SocialMediaImage src={VkIcon} />
+        <SocialMediaImage src={InstaIcon} />
+        <MenuBtn src={MenuButton} />
       </ContactsContainer>
     </Container>
   );
