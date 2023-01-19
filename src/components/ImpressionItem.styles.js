@@ -9,9 +9,23 @@ export const Card = styled.div`
   &:hover {
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   }
+
+  @media (max-width: 375px) {
+    height: 314px;
+    width: 158px;
+    border-radius: 8px;
+
+    &:hover {
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    }
+  }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  @media (max-width: 375px) {
+    width: 158px;
+  }
+`;
 
 export const DescContainer = styled.div`
   height: 297px;
@@ -20,6 +34,11 @@ export const DescContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 375px) {
+    height: 164px;
+    width: 158px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -31,6 +50,14 @@ export const Title = styled.h3`
   max-width: 347px;
   text-align: center;
   margin: 20px auto;
+
+  @media (max-width: 375px) {
+    margin: 0 auto 10px;
+    min-width: 138px;
+    max-width: 138px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;
 
 export const Price = styled.h2`
@@ -38,6 +65,11 @@ export const Price = styled.h2`
   line-height: 44px;
   font-weight: 600;
   color: #333;
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 export const Button = styled.button`
@@ -61,6 +93,13 @@ export const Button = styled.button`
     background: #547900;
     opacity: 0.8;
   }
+
+  @media (max-width: 375px) {
+    margin: 10px auto;
+    padding: 8px 40px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 `;
 
 export const Option = styled.p`
@@ -76,5 +115,11 @@ export const Option = styled.p`
   &:hover {
     cursor: pointer;
     border-bottom: 1px solid #888;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
   }
 `;
