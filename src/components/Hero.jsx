@@ -41,7 +41,7 @@ const Hero = () => {
     <Container>
       <Carousel 
         className="carousel" 
-        showArrows 
+        showArrows={false} 
         autoPlay 
         infiniteLoop 
         showStatus={false}

@@ -7,6 +7,12 @@ export const Container = styled.div`
   margin: 40px auto 70px;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (max-width: 375px) {
+    height: 380px;
+    max-width: 335px;
+    margin: 20px auto 30px;
+  }
 `;
 
 export const Slide = styled.div`
@@ -18,9 +24,14 @@ export const Slide = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: flex-start;
-`;
 
-export const Image = styled.img``;
+  @media (max-width: 375px) {
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+`;
 
 export const Price = styled.div`
   background: #dfa650;
@@ -30,6 +41,13 @@ export const Price = styled.div`
   line-height: 34px;
   font-weight: 700;
   color: #fff;
+
+  @media (max-width: 375px) {
+    padding: 6px 10px;
+    border: 2px solid #dfa650;
+    font-size: 12px;
+    line-height: 16px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -43,6 +61,15 @@ export const Title = styled.h2`
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
+
+  @media (max-width: 375px) {
+    min-width: auto;
+    max-width: 270px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 32px;
+  }
 `;
 
 export const Button = styled.button`
@@ -60,5 +87,13 @@ export const Button = styled.button`
   &:hover {
     background: #333;
     color: #f6f1e4;
+  }
+
+  @media (max-width: 375px) {
+    padding: 11px 22px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 18px;
   }
 `;
