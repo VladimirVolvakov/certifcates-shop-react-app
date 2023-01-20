@@ -4,6 +4,11 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1300px;
   margin: 0 auto 100px;
+
+  @media (max-width: 375px) {
+    max-width: 335px;
+    margin-bottom: 60px;
+  }
 `;
 
 export const Offer = styled.div`
@@ -13,6 +18,11 @@ export const Offer = styled.div`
   justify-content: space-between;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (max-width: 375px) {
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 export const Info = styled.div`
@@ -21,10 +31,19 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 375px) {
+    max-width: 335px;
+    padding-top: 30px;
+  }
 `;
 
 export const ImageContainer = styled.div`
   width: 530px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+  }
 `;
 
 export const Image = styled.img`
@@ -40,6 +59,12 @@ export const Header = styled.h3`
   line-height: 34px;
   font-weight: 500;
   color: #fff;
+
+  @media (max-width: 375px) {
+    padding: 15px 44px 15px 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -51,6 +76,15 @@ export const Title = styled.h2`
   font-weight: 700;
   color: #404936;
   text-align: left;
+
+  @media (max-width: 375px) {
+    max-width: 290px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 800;
+  }
 `;
 
 export const PriceChange = styled.div`
@@ -58,6 +92,11 @@ export const PriceChange = styled.div`
   margin-bottom: 31px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 375px) {
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
 `;
 
 export const OldPrice = styled.div`
@@ -67,6 +106,12 @@ export const OldPrice = styled.div`
   color: #a3a3a3;
   text-decoration: line-through;
   margin-right: 31px;
+
+  @media (max-width: 375px) {
+    font-size: 22px;
+    line-height: 26px;
+    margin-right: 30px;
+  }
 `;
 
 export const NewPrice = styled.div`
@@ -74,6 +119,10 @@ export const NewPrice = styled.div`
   line-height: 34px;
   font-weight: 700;
   color: #404936;
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -95,5 +144,12 @@ export const Button = styled.button`
   &:hover {
     background: #547900;
     opacity: 0.8;
+  }
+
+  @media (max-width: 375px) {
+    margin: 0 auto 56px;
+    padding: 11px 62.5px;
+    font-size: 14px;
+    line-height: 18px;
   }
 `;

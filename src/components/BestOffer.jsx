@@ -50,7 +50,7 @@ const BestOffer = () => {
               <Button>Заказать впечатление</Button>
             </Info>
             <ImageContainer>
-            <Image src={offer.image} alt={offer.title} />
+              <Image src={offer.image} alt={offer.title} />
             </ImageContainer>
           </Offer>
         )) }
