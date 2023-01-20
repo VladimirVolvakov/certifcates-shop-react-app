@@ -10,6 +10,10 @@ export const AccordionHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 375px) {
+    padding: 15px 0;
+  }
 `;
 
 export const AccordionBody = styled.div``;
@@ -19,6 +23,12 @@ export const Question = styled.h3`
   line-height: 37px;
   font-weight: 600;
   color: #333;
+
+  @media (max-width: 375px) {
+    width: 266px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;
 
 export const Toggler = styled.div`
@@ -39,6 +49,12 @@ export const Toggler = styled.div`
     color: #e8e8e8;
     background: #333;
   }
+
+  @media (max-width: 375px) {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+  }
 `;
 
 export const Answer = styled.div`
@@ -47,4 +63,10 @@ export const Answer = styled.div`
   font-weight: 400;
   color: #333;
   margin-bottom: 25px;
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
 `;
