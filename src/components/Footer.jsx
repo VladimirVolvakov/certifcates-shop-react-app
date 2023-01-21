@@ -1,5 +1,5 @@
 // Styles:
-import { Button, CallUs, ContactsContainer, Container, Image, Logo, LogoContainer, Menu, MenuContainer, MenuHeader, MenuItem, RequestContainer, SocialMedia, Text, Title } from './Footer.styles';
+import { Button, CallUs, ContactsContainer, Container, Image, Logo, LogoContainer, Menu, MenuContainer, MenuHeader, MenuItem, RequestContainer, RightsContainer, SocialMedia, Text, Title } from './Footer.styles';
 // Images:
 import InstaIcon from '../assets/icons/InstagramIcon.png';
 import LogoImage from '../assets/icons/LogoImage.png';
@@ -37,6 +37,9 @@ const Footer = () => {
         <CallUs>Оставьте заявку, мы свяжемся с Вами <br/> в ближайшее время</CallUs>
         <Button>Оставить заявку</Button>
       </RequestContainer>
+      <RightsContainer>
+        <Text>Все права защищены © Дари Душой, 2023 г.</Text>
+      </RightsContainer>
     </Container>
   );
 };
