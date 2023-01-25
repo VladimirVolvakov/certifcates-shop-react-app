@@ -1,7 +1,9 @@
 // Styles:
 import { Button, Card, DescContainer, Image, LowerPart, Option, Price, Title, UpperPart } from "./ImpressionItem.styles";
 
+
 const ImpressionItem = ({ title, image, price, offer }) => {
+  
   return (
     <Card>
       <Image src={image} />

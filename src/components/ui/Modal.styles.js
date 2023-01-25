@@ -6,7 +6,7 @@ export const Container = styled.div`
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,6 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 90%;
   max-width: 1300px;
   padding: 40px;
   background-color: #fff;
