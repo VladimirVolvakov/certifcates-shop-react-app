@@ -32,14 +32,18 @@ export const DescContainer = styled.div`
   width: 407px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px 0 28px;
 
   @media (max-width: 375px) {
     height: 164px;
     width: 158px;
+    padding: 10px 0 12px;
   }
 `;
+
+export const UpperPart = styled.div``;
 
 export const Title = styled.h3`
   font-size: 30px;
@@ -49,7 +53,7 @@ export const Title = styled.h3`
   min-width: 239px;
   max-width: 347px;
   text-align: center;
-  margin: 20px auto;
+  margin: 0 auto;
 
   @media (max-width: 375px) {
     margin: 0 auto 10px;
@@ -58,6 +62,13 @@ export const Title = styled.h3`
     font-size: 16px;
     line-height: 20px;
   }
+`;
+
+export const LowerPart = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
 export const Price = styled.h2`
@@ -109,7 +120,6 @@ export const Option = styled.p`
   color: #888;
   border-bottom: 1px solid transparent;
   text-align: center;
-  margin-bottom: 28px;
   transition: all 0.3s;
 
   &:hover {
@@ -120,6 +130,5 @@ export const Option = styled.p`
   @media (max-width: 375px) {
     font-size: 12px;
     line-height: 16px;
-    margin-bottom: 12px;
   }
 `;

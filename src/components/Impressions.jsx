@@ -81,7 +81,7 @@ const impressionsArray = [
   },
   {
     id: 10,
-    title: 'Игра в виртуальной реальности',
+    title: 'Игра в Virtual Reality',
     image: AugmentedReality,
     price: '600 ₽',
     specialOffer: false
