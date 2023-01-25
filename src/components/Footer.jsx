@@ -6,7 +6,7 @@ import LogoImage from '../assets/icons/LogoImage.png';
 import LogoText from '../assets/icons/LogoText.png';
 import VkIcon from '../assets/icons/VkIcon.png';
 
-const Footer = () => {
+const Footer = ({ onOrderBtnClick }) => {
   return (
     <Container>
       <LogoContainer>
@@ -35,7 +35,7 @@ const Footer = () => {
       <RequestContainer>
         <Title>Остались вопросы?</Title>
         <CallUs>Оставьте заявку, мы свяжемся с Вами <br/> в ближайшее время</CallUs>
-        <Button>Оставить заявку</Button>
+        <Button onClick={onOrderBtnClick}>Оставить заявку</Button>
       </RequestContainer>
       <RightsContainer>
         <Text>Все права защищены © Дари Душой, 2023 г.</Text>

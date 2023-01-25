@@ -43,7 +43,6 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   height: 155px;
-  scroll: none;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -51,6 +50,7 @@ export const Textarea = styled.textarea`
   padding: 15px;
   border: 1px solid #c2c2c2;
   border-radius: 10px;
+  resize: none;
 `;
 
 export const PersonalData = styled.div`

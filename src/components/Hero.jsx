@@ -36,7 +36,7 @@ const slidesArray = [
   }
 ];
 
-const Hero = () => {
+const Hero = ({ onOrderBtnClick }) => {
   return (
     <Container>
       <Carousel 
@@ -53,7 +53,7 @@ const Hero = () => {
           <Slide key={slide.id} background={slide.image}>
             <Price>{slide.price}</Price>
             <Title>{slide.description}</Title>
-            <Button>Заказать впечатление</Button>
+            <Button onClick={onOrderBtnClick}>Заказать впечатление</Button>
           </Slide>
         )) }
       </Carousel>

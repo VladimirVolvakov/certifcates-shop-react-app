@@ -25,7 +25,7 @@ const offersArray = [
   }
 ];
 
-const BestOffer = () => {
+const BestOffer = ({ onOrderBtnClick }) => {
   return (
     <Container>
       <Carousel 
@@ -47,7 +47,7 @@ const BestOffer = () => {
                 <OldPrice>{offer.oldPrice}</OldPrice>
                 <NewPrice>{offer.newPrice}</NewPrice>
               </PriceChange>
-              <Button>Заказать впечатление</Button>
+              <Button onClick={onOrderBtnClick}>Заказать впечатление</Button>
             </Info>
             <ImageContainer>
               <Image src={offer.image} alt={offer.title} />

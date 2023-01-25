@@ -7,20 +7,35 @@ import GiftCertificate from "./components/GiftCertificate";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Impressions from "./components/Impressions";
+import Modal from "./components/ui/Modal";
 import OrderForm from "./components/OrderForm";
+// Hooks:
+import { useState } from "react";
 
 function App() {
+  const [isOrderPopupOpen, setIsOrderPopupOpen] = useState(false);
+
+  const onOrderBtnClickHandler = () => setIsOrderPopupOpen(true);
+
+  const closePopupHandler = () => {
+    setIsOrderPopupOpen(false);    
+  }
+
   return (
     <>
-      <OrderForm />
+      { isOrderPopupOpen && (
+        <Modal onPopupClick={closePopupHandler}>
+          <OrderForm />
+        </Modal>
+      ) }
       <Header />
-      <Hero />
+      <Hero onOrderBtnClick={onOrderBtnClickHandler} />
       <Advantages />
-      <Impressions />
-      <BestOffer />
+      <Impressions onOrderBtnClick={onOrderBtnClickHandler} />
+      <BestOffer onOrderBtnClick={onOrderBtnClickHandler} />
       <GiftCertificate />
       <AccordionFaq />
-      <Footer />
+      <Footer onOrderBtnClick={onOrderBtnClickHandler} />
     </>
   );
 }
