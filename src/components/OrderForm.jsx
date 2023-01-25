@@ -1,18 +1,28 @@
 // Styles:
 import { Button, Checkbox, Container, ErrorText, Form, Header, Input, InputDiv, Label, PersonalData, Subheader, Textarea, UnderlinedText } from "./OrderForm.styles";
 // Hook:
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const OrderForm = () => {
   const [nameValue, setNameValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
   const [commentValue, setCommentValue] = useState("");
+  const [checkboxIsChecked, setCheckboxIsChecked] = useState(true);
 
   const [nameValueIsValid, setNameValueIsValid] = useState(false);
   const [phoneValueIsValid, setPhoneValueIsValid] = useState(false);
+  const [formIsValid, setFormIsValid] = useState(false);
 
   const [nameInputWasTouched, setNameInputWasTouched] = useState(false);
   const [phoneInputWasTouched, setPhoneInputWasTouched] = useState(false);
+
+  useEffect(() => {
+    if (nameValueIsValid && phoneValueIsValid && checkboxIsChecked) {
+      setFormIsValid(true);
+    } else {
+      setFormIsValid(false);
+    };
+  }, [checkboxIsChecked, nameValueIsValid, phoneValueIsValid]);
 
   const nameValueChangeHandler = event => {
     setNameValue(event.target.value);
@@ -31,6 +41,7 @@ const OrderForm = () => {
   };
 
   const commentValueChangeHandler = event => setCommentValue(event.target.value);
+  const checkboxValueChangeHandler = () => setCheckboxIsChecked(!checkboxIsChecked);
 
   const nameInputBlurHandler = event => {
     setNameInputWasTouched(true);
@@ -70,12 +81,14 @@ const OrderForm = () => {
     console.log({
       name: nameValue,
       phone: phoneValue,
-      comment: commentValue
+      comment: commentValue,
+      checkbox: checkboxIsChecked
     });
 
     setNameValue("");
     setPhoneValue("");
     setCommentValue("");
+    setCheckboxIsChecked(true);
   };
 
   const nameValueIsInvalid = !nameValueIsValid && nameInputWasTouched;
@@ -118,13 +131,23 @@ const OrderForm = () => {
             value={commentValue}
           />
         </InputDiv>
-        <PersonalData>
-          <Checkbox type="checkbox" id="data-processing" name="data-processing" required />
-          <Label htmlFor="data-processing">
-            Отправляя заявку, Вы соглашаетесь на обработку <UnderlinedText>персональных данных</UnderlinedText>
-          </Label>
-        </PersonalData>
-        <Button>Отправить заявку</Button>
+        <InputDiv>
+          { !checkboxIsChecked && (<ErrorText>Пожалуйста, дайте разрешение на обработку Ваших данных</ErrorText>) }
+          <PersonalData>
+            <Checkbox 
+              type="checkbox" 
+              id="data-processing" 
+              name="data-processing" 
+              checked={checkboxIsChecked}
+              onChange={checkboxValueChangeHandler}
+              required 
+            />
+            <Label htmlFor="data-processing">
+              Отправляя заявку, Вы соглашаетесь на обработку <UnderlinedText>персональных данных</UnderlinedText>
+            </Label>
+          </PersonalData>
+        </InputDiv>
+        <Button disabled={!formIsValid}>Отправить заявку</Button>
       </Form>
     </Container>
   );
