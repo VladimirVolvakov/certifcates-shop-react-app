@@ -32,6 +32,7 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -43,6 +44,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   height: 155px;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -97,4 +99,16 @@ export const Button = styled.button`
     background: #547900;
     opacity: 0.8;
   }
+`;
+
+export const InputDiv = styled.div`
+  width: 100%;
+`;
+
+export const ErrorText = styled.p`
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: red;
+  margin-bottom: 6px;
 `;
