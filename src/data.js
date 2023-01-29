@@ -788,9 +788,24 @@ export const impressionsData = [
     title: "ПОЛЕТ НА МОТОПАРАПЛАНЕ",
     options: [
       {
-        price: "",
+        price: "3 000 ₽",
         feature: "",
-        description: <div></div>,
+        description: (
+          <div>
+            <p></p>
+            <p></p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p></p>
+            <p></p>
+          </div>
+        ),
       },
     ],
   },
