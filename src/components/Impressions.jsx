@@ -97,7 +97,7 @@ const impressionsArray = [
 
 const Impressions = ({ onOrderBtnClick }) => {
   return (
-    <CatalogueContainer>
+    <CatalogueContainer id='catalog'>
       <Title>КАТАЛОГ ВПЕЧАТЛЕНИЙ</Title>
       <Catalogue>
         { impressionsArray.map(impression => (

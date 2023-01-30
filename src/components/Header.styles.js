@@ -67,7 +67,12 @@ export const LinksList = styled.ul`
   gap: 40px;
 `;
 
-export const Link = styled.li`
+export const Link = styled.a`
+  color: inherit;
+  text-decoration: inherit;
+`;
+
+export const LinkItem = styled.li`
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;

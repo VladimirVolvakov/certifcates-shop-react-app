@@ -8,7 +8,7 @@ import VkIcon from '../assets/icons/VkIcon.png';
 
 const Footer = ({ onOrderBtnClick }) => {
   return (
-    <Container>
+    <Container id='footer'>
       <LogoContainer>
         <Logo>
           <Image src={LogoImage} />

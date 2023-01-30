@@ -27,7 +27,7 @@ const offersArray = [
 
 const BestOffer = ({ onOrderBtnClick }) => {
   return (
-    <Container>
+    <Container id="bestoffer">
       <Carousel 
         className="carousel" 
         showArrows={false} 
