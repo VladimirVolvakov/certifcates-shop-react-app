@@ -1,18 +1,24 @@
 // Styles:
-import { Button, CallUs, ContactsContainer, Container, Image, Logo, LogoContainer, Menu, MenuContainer, MenuHeader, MenuItem, RequestContainer, RightsContainer, SocialMedia, Text, Title } from './Footer.styles';
+import { Button, CallUs, ContactsContainer, Container, Image, Link, Logo, 
+  LogoContainer, Menu, MenuContainer, MenuHeader, MenuItem, RequestContainer, 
+  RightsContainer, SocialMedia, Text, Title } from "./Footer.styles";
 // Images:
-import InstaIcon from '../assets/icons/InstagramIcon.png';
-import LogoImage from '../assets/icons/LogoImage.png';
-import LogoText from '../assets/icons/LogoText.png';
-import VkIcon from '../assets/icons/VkIcon.png';
+import InstaIcon from "../assets/icons/InstagramIcon.png";
+import LogoImage from "../assets/icons/LogoImage.png";
+import LogoText from "../assets/icons/LogoText.png";
+import VkIcon from "../assets/icons/VkIcon.png";
 
 const Footer = ({ onOrderBtnClick }) => {
   return (
-    <Container id='footer'>
+    <Container id="footer">
       <LogoContainer>
         <Logo>
-          <Image src={LogoImage} />
-          <Image src={LogoText} />
+          <Link href="#">
+            <Image src={LogoImage} />
+          </Link>
+          <Link href="#">
+            <Image src={LogoText} />
+          </Link>
         </Logo>
         <Text>Все права защищены</Text>
         <Text>© Дари Душой, 2023 г.</Text>
@@ -20,21 +26,35 @@ const Footer = ({ onOrderBtnClick }) => {
       <MenuContainer>
         <MenuHeader>Меню</MenuHeader>
         <Menu>
-          <MenuItem>Каталог</MenuItem>
-          <MenuItem>Акции</MenuItem>
-          <MenuItem>Контакты</MenuItem>
+          <MenuItem>
+            <Link href="#catalog">Каталог</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="#bestoffer">Акции</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="#footer">Контакты</Link>
+          </MenuItem>
         </Menu>
       </MenuContainer>
       <ContactsContainer>
-        <Title>+38-050-123-45-67</Title>
+        <Title>
+          <Link href="tel:+380501234567">+38-050-123-45-67</Link>
+        </Title>
         <SocialMedia>
-          <Image src={VkIcon} />
-          <Image src={InstaIcon} />
+          <Link href="https://vk.com/daridushoi">
+            <Image src={VkIcon} />
+          </Link>
+          <Link href="https://www.instagram.com/daridushoi">
+            <Image src={InstaIcon} />
+          </Link>
         </SocialMedia>
       </ContactsContainer>
       <RequestContainer>
         <Title>Остались вопросы?</Title>
-        <CallUs>Оставьте заявку, мы свяжемся с Вами <br/> в ближайшее время</CallUs>
+        <CallUs>
+          Оставьте заявку, мы свяжемся с Вами <br /> в ближайшее время
+        </CallUs>
         <Button onClick={onOrderBtnClick}>Оставить заявку</Button>
       </RequestContainer>
       <RightsContainer>

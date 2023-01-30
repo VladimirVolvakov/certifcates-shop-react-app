@@ -1,7 +1,6 @@
 // Styles:
-import { ContactsContainer, Container, Image, ImageText, LinksList, 
-  LinksContainer,   Link, LogoContainer, LinkItem, MenuBtn, PhoneNumber, 
-  SocialMediaImage } from "./Header.styles.js";
+import { ContactsContainer, Container, Image, ImageText, LinksList, LinksContainer,
+  Link, LogoContainer, LinkItem, MenuBtn, PhoneNumber, SocialMediaImage } from "./Header.styles.js";
 // Images:
 import InstaIcon from "../assets/icons/InstagramIcon.png";
 import LogoImage from "../assets/icons/Group_54.png";
@@ -30,11 +29,13 @@ const Header = () => {
         </LinksList>
       </LinksContainer>
       <ContactsContainer>
-        <PhoneNumber>+38-050-123-45-67</PhoneNumber>
-        <Link href="https://vk.com">
+        <PhoneNumber>
+          <Link href="tel:+380501234567">+38-050-123-45-67</Link>
+        </PhoneNumber>
+        <Link href="https://vk.com/daridushoi">
           <SocialMediaImage src={VkIcon} />
         </Link>
-        <Link href="https://instagram.com">
+        <Link href="https://www.instagram.com/daridushoi">
           <SocialMediaImage src={InstaIcon} />
         </Link>
         <MenuBtn src={MenuButton} />

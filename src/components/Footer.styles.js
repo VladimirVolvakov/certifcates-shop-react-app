@@ -33,6 +33,11 @@ export const Logo = styled.div`
   margin-bottom: 29px;
 `;
 
+export const Link = styled.a`
+  color: inherit;
+  text-decoration: inherit;
+`;
+
 export const Image = styled.img`
   cursor: pointer;
 
