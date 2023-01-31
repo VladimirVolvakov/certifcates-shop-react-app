@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import GiftCertificate from "./components/GiftCertificate";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import ImpressionDetails from "./components/ImpressionDetails";
 import Impressions from "./components/Impressions";
 import Modal from "./components/ui/Modal";
 import OrderForm from "./components/OrderForm";
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+      <ImpressionDetails />
       { isOrderPopupOpen && (
         <Modal onPopupClick={closePopupHandler}>
           <OrderForm />

@@ -1,3 +1,15 @@
+import styled from "styled-components";
+
+import ImprDetHorseRiding from "./assets/images/ImprDetHorseRiding.png"
+
+const Div = styled.div``;
+
+const Paragraph = styled.p``;
+
+const UnorderedList = styled.ul``;
+
+const ListItem = styled.li``;
+
 export const impressionsData = [
   {
     id: 1,
@@ -186,45 +198,46 @@ export const impressionsData = [
   {
     id: 5,
     title: "КОННАЯ ПРОГУЛКА",
+    imgSrc: [ ImprDetHorseRiding, ImprDetHorseRiding, ImprDetHorseRiding],
     options: [
       {
         price: "от 990 ₽",
         feature: "30 мин",
         description: (
-          <div>
-            <p>
+          <Div>
+            <Paragraph>
               Конные прогулки подходят как для взрослых, так и для детей от 3
               лет.
-            </p>
-            <ul>
-              <li>Для взрослых — гнедые рысаки, выдерживающие до 90 кг</li>
-              <li>
+            </Paragraph>
+            <UnorderedList>
+              <ListItem>Для взрослых — гнедые рысаки, выдерживающие до 90 кг</ListItem>
+              <ListItem>
                 Для детей — милые пони, которые вызывают восторг у малышей
-              </li>
-            </ul>
-            <p>
+              </ListItem>
+            </UnorderedList>
+            <Paragraph>
               Наш инструктор Анастасия познакомит вас с лошадьми, подробно
               расскажет и покажет особенности общения с этими животными,
               проведет короткий инструктаж и поможет сесть верхом.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Под присмотром инструктора вы сможете погладить лошадь, покормить
               ее, взять под уздцы и самостоятельно поуправлять во время
               прогулки.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Наши лошади спокойные, уравновешенные и хорошо воспитанные, чтобы
               даже новички чувствовали себя комфортно.
-            </p>
-            <p>Варианты прогулок:</p>
-            <ul>
-              <li>Стандартная — 30 минут - 990 рублей</li>
-              <li>Полноценная — 1 час - 1 500 рублей</li>
-              <li>Романтическая прогулка — 1,5 часа - 5 000 руб (на двоих)</li>
-              <li>Фотосессия с лошадью или пони — 30 минут - 3 000 руб</li>
-            </ul>
+            </Paragraph>
+            <Paragraph>Варианты прогулок:</Paragraph>
+            <UnorderedList>
+              <ListItem>Стандартная — 30 минут - 990 рублей</ListItem>
+              <ListItem>Полноценная — 1 час - 1 500 рублей</ListItem>
+              <ListItem>Романтическая прогулка — 1,5 часа - 5 000 руб (на двоих)</ListItem>
+              <ListItem>Фотосессия с лошадью или пони — 30 минут - 3 000 руб</ListItem>
+            </UnorderedList>
             <p>Локация - ипподром за Парком Победы</p>
-          </div>
+          </Div>
         ),
       },
       {
