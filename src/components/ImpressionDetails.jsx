@@ -1,5 +1,5 @@
 // Styles: 
-import { Button, Container, Description, Header, Image, ImageContainer, Main, MiddlePart, Option, PhotoCarousel, Price, Select, Subheader, Title, UpperPart } from "./ImpressionDetails.styles";
+import { Button, CloseButton, Container, Description, Header, Image, ImageContainer, Main, MiddlePart, Option, PhotoCarousel, Price, Select, Subheader, Title, UpperPart } from "./ImpressionDetails.styles";
 // Impressions information:
 import { impressionsData } from "../data";
 // Carousel:
@@ -9,14 +9,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const ImpressionDetails = () => {
   return (
     <Container>
+      <CloseButton>✕</CloseButton>
       <PhotoCarousel>
         <Carousel 
           className="carousel" 
           showArrows={false} 
-          autoPlay 
+          autoPlay={false} 
           infiniteLoop 
           showStatus={false}
-          showThumbs={false}
+          showThumbs
           swipeable
           transitionTime={400}
         >

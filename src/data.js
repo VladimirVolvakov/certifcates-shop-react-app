@@ -1,14 +1,47 @@
 import styled from "styled-components";
 
-import ImprDetHorseRiding from "./assets/images/ImprDetHorseRiding.png"
+import ImprDetHorseRiding from "./assets/images/ImprDetHorseRiding.png";
 
-const Div = styled.div``;
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+`;
 
-const UnorderedList = styled.ul``;
+const BoldParagraph = styled.p`
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #333;
+`;
 
-const ListItem = styled.li``;
+const UnorderedList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+`;
+
+const ListItem = styled.li`
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333;
+
+  &::marker {
+    height: 10px;
+    width: 10px;
+    color: #547147;
+  }
+`;
 
 export const impressionsData = [
   {
@@ -198,7 +231,7 @@ export const impressionsData = [
   {
     id: 5,
     title: "КОННАЯ ПРОГУЛКА",
-    imgSrc: [ ImprDetHorseRiding, ImprDetHorseRiding, ImprDetHorseRiding],
+    imgSrc: [ImprDetHorseRiding, ImprDetHorseRiding, ImprDetHorseRiding],
     options: [
       {
         price: "от 990 ₽",
@@ -210,7 +243,9 @@ export const impressionsData = [
               лет.
             </Paragraph>
             <UnorderedList>
-              <ListItem>Для взрослых — гнедые рысаки, выдерживающие до 90 кг</ListItem>
+              <ListItem>
+                Для взрослых — гнедые рысаки, выдерживающие до 90 кг
+              </ListItem>
               <ListItem>
                 Для детей — милые пони, которые вызывают восторг у малышей
               </ListItem>
@@ -229,14 +264,16 @@ export const impressionsData = [
               Наши лошади спокойные, уравновешенные и хорошо воспитанные, чтобы
               даже новички чувствовали себя комфортно.
             </Paragraph>
-            <Paragraph>Варианты прогулок:</Paragraph>
-            <UnorderedList>
-              <ListItem>Стандартная — 30 минут - 990 рублей</ListItem>
-              <ListItem>Полноценная — 1 час - 1 500 рублей</ListItem>
-              <ListItem>Романтическая прогулка — 1,5 часа - 5 000 руб (на двоих)</ListItem>
-              <ListItem>Фотосессия с лошадью или пони — 30 минут - 3 000 руб</ListItem>
-            </UnorderedList>
-            <p>Локация - ипподром за Парком Победы</p>
+            <BoldParagraph>Варианты прогулок:</BoldParagraph>
+            <Paragraph>Стандартная — 30 минут - 990 рублей</Paragraph>
+            <Paragraph>Полноценная — 1 час - 1 500 рублей</Paragraph>
+            <Paragraph>
+              Романтическая прогулка — 1,5 часа - 5 000 руб (на двоих)
+            </Paragraph>
+            <Paragraph>
+              Фотосессия с лошадью или пони — 30 минут - 3 000 руб
+            </Paragraph>
+            <Paragraph>Локация - ипподром за Парком Победы</Paragraph>
           </Div>
         ),
       },
