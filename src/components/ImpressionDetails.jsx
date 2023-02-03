@@ -35,11 +35,11 @@ const ImpressionDetails = () => {
           </UpperPart>
           <MiddlePart>
             <Price>{ impressionsData[4].options[0].price}</Price>
-            <Select name="impression_options">
+            { impressionsData[4].options.length > 1 && (<Select name="impression_options">
               <Option value={impressionsData[4].options[0].feature}>{ impressionsData[4].options[0].feature }</Option>
               <Option value={impressionsData[4].options[1].feature}>{ impressionsData[4].options[1].feature }</Option>
               <Option value={impressionsData[4].options[2].feature}>{ impressionsData[4].options[2].feature }</Option>
-            </Select>
+            </Select>)}
           </MiddlePart>
           <Button>Заказать впечатление</Button>
         </Header>

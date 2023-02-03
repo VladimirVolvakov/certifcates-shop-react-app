@@ -33,10 +33,12 @@ export const PhotoCarousel = styled.div`
 
 export const ImageContainer = styled.div`
   border-radius: 20px;
+  overflow: hidden;
 `;
 
 export const Image = styled.img`
   border-radius: 20px;
+  overflow: hidden;
 `;
 
 export const Description = styled.div`
