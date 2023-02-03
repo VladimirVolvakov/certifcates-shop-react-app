@@ -10,6 +10,14 @@ export const Container = styled.div`
   background: #fff;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 375px) {
+    max-width: 335px;
+    padding: 45px 20px 20px 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    // align-items: center;
+  }
 `;
 
 export const CloseButton = styled.div`
@@ -23,12 +31,23 @@ export const CloseButton = styled.div`
   &:hover {
     font-weight: 800;
   }
+
+  @media (max-width: 375px) {
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+  }
 `;
 
 export const PhotoCarousel = styled.div`
   width: 450px;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (max-width: 375px) {
+    width: 295px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -43,11 +62,20 @@ export const Image = styled.img`
 
 export const Description = styled.div`
   width: 730px;
+
+  @media (max-width: 375px) {
+    width: 295px;
+  }
 `;
 
 export const Header = styled.div`
   width: 394px;
   margin-bottom: 40px;
+
+  @media (max-width: 375px) {
+    width: 295px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const UpperPart = styled.div``;
@@ -64,6 +92,12 @@ export const Title = styled.h3`
   line-height: 40px;
   font-weight: 700;
   color: #333;
+
+  @media (max-width: 375px) {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+  }
 `;
 
 export const Price = styled.h2`
@@ -71,6 +105,12 @@ export const Price = styled.h2`
   line-height: 54px;
   font-weight: 700;
   color: #333;
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 600;
+  }
 `;
 
 export const Select = styled.select`
@@ -116,6 +156,13 @@ export const Button = styled.button`
     background: #547900;
     opacity: 0.8;
   }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 22px;
+    width: 100%;
+  }
 `;
 
 export const Main = styled.div``;
@@ -126,4 +173,10 @@ export const Subheader = styled.h4`
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
 `;

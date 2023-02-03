@@ -6,6 +6,10 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 375px) {
+    gap: 15px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -28,6 +32,10 @@ const UnorderedList = styled.ul`
   align-items: flex-start;
   gap: 20px;
   padding-left: 20px;
+
+  @media (max-width: 375px) {
+    gap: 15px;
+  }
 `;
 
 const ListItem = styled.li`
