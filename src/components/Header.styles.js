@@ -134,3 +134,15 @@ export const MenuBtn = styled.img`
     }
   }
 `;
+
+export const BurgerMenu = styled.div`
+  display: none;
+
+  @media (max-width: 375px) {
+    display: block;
+  }
+`;
+
+export const CloseButtonContainer = styled.div``;
+
+export const SocialMediaContainer = styled.div``;

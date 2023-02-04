@@ -1,6 +1,6 @@
 // Styles:
-import { ContactsContainer, Container, Image, ImageText, LinksList, LinksContainer,
-  Link, LogoContainer, LinkItem, MenuBtn, PhoneNumber, SocialMediaImage } from "./Header.styles.js";
+import { CloseButtonContainer, ContactsContainer, Container, Image, ImageText, LinksList, LinksContainer,
+  Link, LogoContainer, LinkItem, MenuBtn, PhoneNumber, SocialMediaImage, BurgerMenu, SocialMediaContainer } from "./Header.styles.js";
 // Images:
 import InstaIcon from "../assets/icons/InstagramIcon.png";
 import LogoImage from "../assets/icons/Group_54.png";
@@ -40,6 +40,30 @@ const Header = () => {
         </Link>
         <MenuBtn src={MenuButton} />
       </ContactsContainer>
+      <BurgerMenu>
+        <CloseButtonContainer>
+          ✕
+        </CloseButtonContainer>
+        <LinksList>
+          <LinkItem>
+            <Link href="#catalog">Каталог</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#bestoffer">Акции</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#footer">Контакты</Link>
+          </LinkItem>
+        </LinksList>
+        <SocialMediaContainer>
+          <Link href="https://vk.com/daridushoi">
+            <SocialMediaImage src={VkIcon} />
+          </Link>
+          <Link href="https://www.instagram.com/daridushoi">
+            <SocialMediaImage src={InstaIcon} />
+          </Link>
+        </SocialMediaContainer>
+      </BurgerMenu>
     </Container>
   );
 };

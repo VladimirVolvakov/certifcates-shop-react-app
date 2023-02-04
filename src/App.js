@@ -17,19 +17,16 @@ function App() {
   const [isOrderPopupOpen, setIsOrderPopupOpen] = useState(false);
 
   const onOrderBtnClickHandler = () => setIsOrderPopupOpen(true);
-
-  const closePopupHandler = () => {
-    setIsOrderPopupOpen(false);    
-  }
+  const closePopupHandler = () => setIsOrderPopupOpen(false);
 
   return (
     <>
-      <ImpressionDetails />
       { isOrderPopupOpen && (
-        <Modal onPopupClick={closePopupHandler}>
+        <Modal purpose="order" onPopupClick={closePopupHandler}>
           <OrderForm />
         </Modal>
       ) }
+      <ImpressionDetails />
       <Header />
       <Hero onOrderBtnClick={onOrderBtnClickHandler} />
       <Advantages />
