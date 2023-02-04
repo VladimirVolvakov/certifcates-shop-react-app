@@ -26,7 +26,7 @@ function App() {
           <OrderForm />
         </Modal>
       ) }
-      <ImpressionDetails />
+      {/* <ImpressionDetails /> */}
       <Header />
       <Hero onOrderBtnClick={onOrderBtnClickHandler} />
       <Advantages />

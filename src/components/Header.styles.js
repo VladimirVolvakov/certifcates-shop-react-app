@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.header`
   height: 96px;
@@ -135,14 +135,80 @@ export const MenuBtn = styled.img`
   }
 `;
 
+const menuAppearance = keyframes`
+  0% {
+    transform: translateX(150px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+`;
+
 export const BurgerMenu = styled.div`
   display: none;
 
   @media (max-width: 375px) {
-    display: block;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    width: 150px;
+    padding: 10px 15px 20px 20px;
+    background-color: #F6EDD9;
+    display: flex;
+    flex-direction: column;
+    animation: 1s ${menuAppearance};
+    z-index: 99;
   }
 `;
 
-export const CloseButtonContainer = styled.div``;
+export const CloseButtonContainer = styled.div`
+  font-size: 30px;
+  font-weight: 500;
+  color: #547147;
+  align-self: flex-end;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
 
-export const SocialMediaContainer = styled.div``;
+  &:hover {
+    font-weight: 800;
+  }
+`;
+
+export const BMLinksContainer = styled.div`
+  margin-bottom: 30px;
+`;
+
+export const BMLinksList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+`;
+
+export const BMLink = styled.a`
+  color: inherit;
+  text-decoration: inherit;
+`;
+
+export const BMLinkItem = styled.li`
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #547147;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+`;
+
+export const SMImage = styled.img`
+  margin-right: 20px;
+`;
