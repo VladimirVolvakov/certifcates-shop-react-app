@@ -7,8 +7,15 @@ import LogoImage from "../assets/icons/Group_54.png";
 import LogoText from "../assets/icons/Group.png";
 import MenuButton from "../assets/icons/MenuButton.png";
 import VkIcon from "../assets/icons/VkIcon.png";
+// Hook:
+import { useState } from "react";
 
 const Header = () => {
+  const [isBurgerMenuOpened, setIsBurgerMenuOpened] = useState(false);
+
+  const openBurgerMenu = () => setIsBurgerMenuOpened(true);
+  const closeBurgerMenu = () => setIsBurgerMenuOpened(false);
+
   return (
     <Container>
       <LogoContainer>
@@ -38,10 +45,10 @@ const Header = () => {
         <Link href="https://www.instagram.com/daridushoi">
           <SocialMediaImage src={InstaIcon} />
         </Link>
-        <MenuBtn src={MenuButton} />
+        { !isBurgerMenuOpened && (<MenuBtn src={MenuButton} onClick={openBurgerMenu} />)}
       </ContactsContainer>
-      <BurgerMenu>
-        <CloseButtonContainer>
+      { isBurgerMenuOpened && (<BurgerMenu>
+        <CloseButtonContainer onClick={closeBurgerMenu}>
           ✕
         </CloseButtonContainer>
         <LinksList>
@@ -63,7 +70,7 @@ const Header = () => {
             <SocialMediaImage src={InstaIcon} />
           </Link>
         </SocialMediaContainer>
-      </BurgerMenu>
+      </BurgerMenu>)}
     </Container>
   );
 };
