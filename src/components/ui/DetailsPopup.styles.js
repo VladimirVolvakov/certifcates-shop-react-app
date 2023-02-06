@@ -21,12 +21,30 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   position: fixed;
-  top: 10px;
-  left: calc((100vw - 1300px)/2);
-  top: calc((100vh - 940px)/2);
+  left: calc((100vw - 1360px)/2);
+  top: 20px;
+  bottom: 20px;
+  height: calc(100vh - 40px);
+  overflow-x: hidden;
+  overflow-y: scroll;
   max-width: 1300px;
   background-color: #fff;
   border-radius: 20px;
   animation: 1s ${appearance} all;
   z-index: 999;
+
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0 20px 20px 0;
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 0 20px 20px 0;
+  }
 `;
