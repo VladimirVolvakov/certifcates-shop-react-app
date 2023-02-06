@@ -21,8 +21,8 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   position: fixed;
-  top: ${props => props.purpose === "details" ? "20px": "calc((100vh - 593px)/2)"};
-  left: ${props => props.purpose === "details" ? "calc((100vw - 1300px)/2)": "calc((100vw - 530px)/2)"};
+  top: calc((100vh - 593px)/2);
+  left: calc((100vw - 530px)/2);
   width: auto;
   max-width: 1300px;
   background-color: #fff;

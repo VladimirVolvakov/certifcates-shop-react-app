@@ -2,6 +2,7 @@
 import AccordionFaq from "./components/AccordionFaq";
 import Advantages from "./components/Advantages";
 import BestOffer from "./components/BestOffer";
+import DetailsPopup from "./components/ui/DetailsPopup";
 import Footer from "./components/Footer";
 import GiftCertificate from "./components/GiftCertificate";
 import Header from "./components/Header";
@@ -22,11 +23,13 @@ function App() {
   return (
     <>
       { isOrderPopupOpen && (
-        <Modal purpose="order" onPopupClick={closePopupHandler}>
+        <Modal onPopupClick={closePopupHandler}>
           <OrderForm />
         </Modal>
       ) }
-      {/* <ImpressionDetails /> */}
+      <DetailsPopup>
+        <ImpressionDetails />
+      </DetailsPopup>
       <Header />
       <Hero onOrderBtnClick={onOrderBtnClickHandler} />
       <Advantages />
