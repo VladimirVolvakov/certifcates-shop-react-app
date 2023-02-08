@@ -6,10 +6,10 @@ import { impressionsData } from "../data";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const ImpressionDetails = () => {
+const ImpressionDetails = ({ onPopupClose }) => {
   return (
     <Container>
-      <CloseButton>✕</CloseButton>
+      <CloseButton onClick={onPopupClose}>✕</CloseButton>
       <PhotoCarousel>
         <Carousel 
           className="carousel" 

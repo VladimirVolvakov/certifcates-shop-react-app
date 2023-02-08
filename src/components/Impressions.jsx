@@ -95,7 +95,7 @@ const impressionsArray = [
   }
 ];
 
-const Impressions = ({ onOrderBtnClick }) => {
+const Impressions = ({ onOrderBtnClick, onDetailsButtonClick }) => {
   return (
     <CatalogueContainer id='catalog'>
       <Title>КАТАЛОГ ВПЕЧАТЛЕНИЙ</Title>
@@ -108,6 +108,7 @@ const Impressions = ({ onOrderBtnClick }) => {
             price={impression.price} 
             offer={impression.specialOffer}
             onOrderBtnClick={onOrderBtnClick}
+            onDetailsButtonClick={onDetailsButtonClick}
           />
         )) }
       </Catalogue>

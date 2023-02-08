@@ -2,7 +2,7 @@
 import { Button, Card, DescContainer, Image, LowerPart, Option, Price, Title, UpperPart } from "./ImpressionItem.styles";
 
 
-const ImpressionItem = ({ title, image, price, offer, onOrderBtnClick }) => {
+const ImpressionItem = ({ title, image, price, offer, onOrderBtnClick, onDetailsButtonClick }) => {
   
   return (
     <Card>
@@ -14,7 +14,7 @@ const ImpressionItem = ({ title, image, price, offer, onOrderBtnClick }) => {
         <LowerPart>
           <Price>{price}</Price>
           <Button onClick={onOrderBtnClick}>Заказать</Button>
-          <Option>Подробнее</Option>
+          <Option onClick={onDetailsButtonClick}>Подробнее</Option>
         </LowerPart>
       </DescContainer>
     </Card>

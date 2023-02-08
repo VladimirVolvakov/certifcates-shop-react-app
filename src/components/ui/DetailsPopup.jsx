@@ -1,10 +1,10 @@
 // Styles: 
 import { Container, Wrapper } from './DetailsPopup.styles';
 
-const DetailsPopup = ({ children }) => {
+const DetailsPopup = ({ children, onPopupClose }) => {
   return (
     <>
-      <Container />
+      <Container onClick={onPopupClose} />
       <Wrapper>
         { children }
       </Wrapper>

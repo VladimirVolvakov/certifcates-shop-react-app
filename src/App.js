@@ -16,9 +16,13 @@ import { useState } from "react";
 
 function App() {
   const [isOrderPopupOpen, setIsOrderPopupOpen] = useState(false);
+  const [isDetailsPopupOpen, setIsDetailsPopupOpen] = useState(false);
 
   const onOrderBtnClickHandler = () => setIsOrderPopupOpen(true);
   const closePopupHandler = () => setIsOrderPopupOpen(false);
+
+  const onDetailsBtnClickHandler = () => setIsDetailsPopupOpen(true);
+  const onCloseBtnClickHandler = () => setIsDetailsPopupOpen(false);
 
   return (
     <>
@@ -27,13 +31,15 @@ function App() {
           <OrderForm />
         </Modal>
       ) }
-      <DetailsPopup>
-        <ImpressionDetails />
-      </DetailsPopup>
+      { isDetailsPopupOpen && (
+        <DetailsPopup onPopupClose={onCloseBtnClickHandler}>
+          <ImpressionDetails onPopupClose={onCloseBtnClickHandler} />
+        </DetailsPopup>
+      )}
       <Header />
       <Hero onOrderBtnClick={onOrderBtnClickHandler} />
       <Advantages />
-      <Impressions onOrderBtnClick={onOrderBtnClickHandler} />
+      <Impressions onDetailsButtonClick={onDetailsBtnClickHandler} onOrderBtnClick={onOrderBtnClickHandler} />
       <BestOffer onOrderBtnClick={onOrderBtnClickHandler} />
       <GiftCertificate />
       <AccordionFaq />

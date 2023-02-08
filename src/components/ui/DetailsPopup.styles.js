@@ -17,6 +17,7 @@ export const Container = styled.div`
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
+  cursor: pointer;
 `;
 
 export const Wrapper = styled.div`
