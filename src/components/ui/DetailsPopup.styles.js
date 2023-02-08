@@ -36,6 +36,10 @@ export const Wrapper = styled.div`
 
   &::-webkit-scrollbar {
     width: 1em;
+
+    @media (max-width: 375px) {
+      width: 0.5em;
+    }
   }
    
   &::-webkit-scrollbar-track {
@@ -47,5 +51,10 @@ export const Wrapper = styled.div`
     background-color: darkgrey;
     outline: 1px solid slategrey;
     border-radius: 0 20px 20px 0;
+  }
+
+  @media (max-width: 375px) {
+    left: calc((100vw - 335px - 0.5em)/2);
+    border-radius: 10px;
   }
 `;

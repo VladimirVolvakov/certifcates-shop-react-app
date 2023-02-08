@@ -16,7 +16,6 @@ export const Container = styled.div`
     padding: 45px 20px 20px 20px;
     flex-direction: column;
     justify-content: flex-start;
-    // align-items: center;
   }
 `;
 
@@ -46,7 +45,6 @@ export const PhotoCarousel = styled.div`
 
   @media (max-width: 375px) {
     width: 295px;
-    margin-bottom: 20px;
   }
 `;
 
@@ -73,12 +71,12 @@ export const Header = styled.div`
   margin-bottom: 40px;
 
   @media (max-width: 375px) {
-    width: 295px;
-    margin-bottom: 30px;
+    width: 100%;
   }
 `;
 
-export const UpperPart = styled.div``;
+export const UpperPart = styled.div`
+`;
 
 export const MiddlePart = styled.div`
   margin: 20px 0 25px;
