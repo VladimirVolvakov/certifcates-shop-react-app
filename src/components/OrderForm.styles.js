@@ -7,6 +7,11 @@ export const Container = styled.div`
   border-radius: 20px;
   background: #fff;
   backdrop-filter: blur(25px);
+
+  @media (max-width: 375px) {
+    width: 335px;
+    padding: 20px;
+  }
 `;
 
 export const Header = styled.h3`
@@ -15,6 +20,11 @@ export const Header = styled.h3`
   font-weight: 600;
   color: #333;
   margin-bottom: 15px;
+
+  @media (max-width: 375px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 `;
 
 export const Subheader = styled.p`
@@ -23,6 +33,12 @@ export const Subheader = styled.p`
   font-weight: 400;
   color: #333;
   margin-bottom: 30px;
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Form = styled.form`
@@ -40,6 +56,12 @@ export const Input = styled.input`
   padding: 20px 15px;
   border: 1px solid #c2c2c2;
   border-radius: 10px;
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -53,6 +75,12 @@ export const Textarea = styled.textarea`
   border: 1px solid #c2c2c2;
   border-radius: 10px;
   resize: none;
+
+  @media (max-width: 375px) {
+    height: 115px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 `;
 
 export const PersonalData = styled.div`
@@ -70,7 +98,7 @@ export const Checkbox = styled.input`
 `;
 
 export const Label = styled.label`
-  font-size: 11px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 400;
   color: #333;
@@ -98,6 +126,12 @@ export const Button = styled.button`
   &:hover {
     background: #547900;
     opacity: 0.8;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 22px;
   }
 `;
 
